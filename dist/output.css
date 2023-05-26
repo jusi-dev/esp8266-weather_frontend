@@ -1047,6 +1047,22 @@ video {
   padding-top: 40vh;
 }
 
+.pt-\[30\] {
+  padding-top: 30;
+}
+
+.pt-\[30\%\] {
+  padding-top: 30%;
+}
+
+.pt-\[30vw\] {
+  padding-top: 30vw;
+}
+
+.pt-\[50vw\] {
+  padding-top: 50vw;
+}
+
 .text-left {
   text-align: left;
 }
