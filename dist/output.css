@@ -736,6 +736,10 @@ video {
   height: 100vh;
 }
 
+.max-h-\[100vh\] {
+  max-height: 100vh;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -798,6 +802,10 @@ video {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-\[100vw\] {
+  max-width: 100vw;
 }
 
 .grow {
