@@ -19,7 +19,7 @@ async function getWeatherData () {
     fetch("https://weather-backend-3hcx.onrender.com/api/weatherLoc1")
       .then(response => response.json())
       .then((data) => {
-        let weatherData = data[0]
+        let weatherData = data
         const date = new Date();
         const timeHour = date.getHours();
         const timeMinutes = date.getMinutes();
