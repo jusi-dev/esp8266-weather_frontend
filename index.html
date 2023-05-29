@@ -52,12 +52,13 @@
             <h2 class="mx-auto font-extrabold text-3xl text-sky-800">Wetter</h2>
             <div class="mt-2 h-0.5 bg-sky-800 w-[30vw] md:w-[30vw] xl:w-[20vw] mx-auto"></div>
         </div>
-        <div class="mt-10">
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold text-center mb-4">Deitingen SO</h2>
             <div>
                 <h2 class="text-sky-700 italic text-2xl text-right">"Hey Siri! Wie ist das Wetter in Deitingen?"</h2>
                 <p class="mt-8 text-sky-700 text-2xl">"Das Wetter in Deitingen SO sieht wie folgt aus:"</p>
             </div>
-            <div class="flex flex-col bg-sky-400 px-6 mt-8 rounded-2xl drop-shadow-lg text-white text-lg font-bold whitespace-pre-wrap">
+            <div class="flex flex-col bg-gradient-to-r from-blue-500 to-cyan-500 px-6 mt-8 rounded-2xl drop-shadow-lg text-white text-lg font-bold whitespace-pre-wrap">
                 <div class="flex mt-6">
                     <p>Temperatur: </p>
                     <p id="temp">null</p>
@@ -80,7 +81,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="mt-24">
+            <h2 class="text-2xl font-bold text-center mb-4">Adelboden BE</h2>
+            <div>
+                <h2 class="text-sky-700 italic text-2xl text-right">"OK Google! Wie ist das Wetter in Adelboden?"</h2>
+                <p class="mt-8 text-sky-700 text-2xl">"Das Wetter in Adelboden BE sieht wie folgt aus:"</p>
+            </div>
+            <div class="flex flex-col bg-gradient-to-r from-blue-500 to-cyan-500 px-6 mt-8 rounded-2xl drop-shadow-lg text-white text-lg font-bold whitespace-pre-wrap">
+                <div class="flex mt-6">
+                    <p>Temperatur: </p>
+                    <p id="temp2">null</p>
+                </div>
+                <div class="flex mt-3">
+                    <p>Humidity: </p>
+                    <p id="hum2">null</p>
+                </div>
+                <div class="flex mt-3">
+                    <p>Bar: </p>
+                    <p id="bar2">null</p>
+                </div>
+                <div class="flex mt-3">
+                    <p>Gas: </p>
+                    <p id="gas2">null</p>
+                </div>
+                <div class="flex mt-3 mb-6 text-sm font-light">
+                    <p>Zuletzt aktualisiert: </p>
+                    <p id="last2">null</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="bg-sky-500 mt-10 px-4 py-6 flex flex-col text-white">
+            <div class="text-2xl font-extrabold">Meteoino</div>
+            <ul class="font-bold mt-2">
+                <li><a href="#wetter">Wetter</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="mx-auto mt-4 text-xs"><p>&copy;2023 Justin Winistörfer</p></div>
+        </div>
+    </footer>
     
 
     <script type="module" src="./scripts/script.js"></script>
