@@ -16,22 +16,18 @@ window.addEventListener("load", (event) => {
   });
 
 async function getWeatherData () {
-    let temp;
-    let humidity;
-    let bar;
-    let gas;
     let gotData = false;
 
     fetch("https://weather-backend-3hcx.onrender.com/api/weatherLoc1")
       .then(response => response.json())
       .then((data) => {
-        weatherData = data
+        let weatherData = data;
         gotData = true
-        temp = weatherData["temp"]
-        humidity = weatherData["humidity"]
-        bar = weatherData["bar"]
-        gas = weatherData["gas"]
-        updated = weatherData["updated"]
+        let temp = weatherData["temp"]
+        let humidity = weatherData["humidity"]
+        let bar = weatherData["bar"]
+        let gas = weatherData["gas"]
+        let updated = weatherData["updated"]
         tempHTML.innerHTML = `${temp} Grad`;
         humidityHTML.innerHTML = `${humidity}%`;
         barHTML.innerHTML = `${bar} Pa`;
@@ -55,18 +51,18 @@ async function getWeatherData () {
     fetch("https://weather-backend-3hcx.onrender.com/api/weatherLoc2")
       .then(response => response.json())
       .then((data) => {
-        weatherData2 = data
+        let weatherData2 = data;
         gotData = true
-        temp2 = weatherData2["temp"]
-        humidity2 = weatherData2["humidity"]
-        bar2 = weatherData2["bar"]
-        gas2 = weatherData2["gas"]
-        updated2 = weatherData2["updated"]
-        tempHTML2.innerHTML = `${temp} Grad`;
-        humidityHTML2.innerHTML = `${humidity}%`;
-        barHTML2.innerHTML = `${bar} Pa`;
-        gasHTML2.innerHTML = `${gas}%`;
-        lastUpdateHTML2.innerHTML = `${updated}`;
+        let temp2 = weatherData2["temp"]
+        let humidity2 = weatherData2["humidity"]
+        let bar2 = weatherData2["bar"]
+        let gas2 = weatherData2["gas"]
+        let updated2 = weatherData2["updated"]
+        tempHTML2.innerHTML = `${temp2} Grad`;
+        humidityHTML2.innerHTML = `${humidity2}%`;
+        barHTML2.innerHTML = `${bar2} Pa`;
+        gasHTML2.innerHTML = `${gas2}%`;
+        lastUpdateHTML2.innerHTML = `${updated2}`;
       })
       .catch((err) => {
         console.log(err)
@@ -75,10 +71,10 @@ async function getWeatherData () {
         bar2 = "NULL"
         gas2 = "NULL"
         updated2 = "NULL"
-        tempHTML2.innerHTML = `${temp} Grad`;
-        humidityHTML2.innerHTML = `${humidity}%`;
-        barHTML2.innerHTML = `${bar} Pa`;
-        gasHTML2.innerHTML = `${gas}%`;
-        lastUpdateHTML2.innerHTML = `${updated}`;
+        tempHTML2.innerHTML = `${temp2} Grad`;
+        humidityHTML2.innerHTML = `${humidity2}%`;
+        barHTML2.innerHTML = `${bar2} Pa`;
+        gasHTML2.innerHTML = `${gas2}%`;
+        lastUpdateHTML2.innerHTML = `${updated2}`;
       })
 }
