@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Meteoino</title>
+</head>
+<body class="bg-slate-100">
+    <nav class="flex flex-row w-full  h-auto p-4 fixed z-50 transition duration-500 ease-in-out bg-sky-500 md:px-10 lg:px-[15vw] 2xl:px-[25vw]" id="nav">
+        <div class="">
+            <div><a href="#hero"><h1 class="text-3xl font-bold text-white text-center cursor-pointer my-auto">Meteoino</a></div>
+        </div>
+        <div class="space-y-2 block ml-auto my-auto z-50 lg:hidden" id="burger-menu">
+            <span class="block w-10 h-1 bg-gray-100 animate-pulse bar rounded-3xl"></span>
+            <span class="block w-10 h-1 bg-gray-100 animate-pulse bar rounded-3xl"></span>
+            <span class="block w-10 h-1 bg-gray-100 animate-pulse bar rounded-3xl"></span>
+        </div>
+        <ul class="hidden lg:flex text-lg  gap-8 ml-20 mr-10 text-white my-auto">
+            <li><a href="#weather" class="hover:text-orange">Wetter</a></li>
+            <li><a href="#about" class="hover:text-orange">About</a></li>
+        </ul>
+    </nav>
+    <div>
+    </div>
+    <div class="w-full h-[40vh] md:h-[20vh] bg-gradient-to-b from-main-blue to-fuenf fixed transition-all text-center z-40 lg:hidden opacity-0 flex flex-col gap-4 " id="nav-links">
+        <ul class="mt-[12vh] md:mt-[8vh] text-2xl text-white font-semibold flex flex-col md:flex-row md:mx-auto md:gap-10 gap-2 nav-items items-center">
+            <li><a href="#weather" class="hover:text-orange">Wetter</a></li>
+            <li><a href="#about" class="hover:text-orange">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="pt-[12vh] mx-8">
+        <div>
+            <div><h2 class="text-3xl font-bold text-sky-500 underline underline-offset-4">Über Meteoino</h2></div>
+            <div class="mt-4">
+                <p> 
+                    Meteoino ist ein Schulprojekt im Rahmen des Moduls XXX, in welchem wir Mithilfe eines Mikroprozessors ein eigens Projekt
+                    verwirklichen sollen. <br><br> Bei Meteoino handelt es sich um eine Applikation, bei welcher Wetterdaten in Echtzeit auf der Website
+                    angezeigt werden. Diese Wetterdaten werden dabei von zwei einzelnen Arduinos, ausgestattet mit einem Wettersensor, Ortsunabhängig
+                    auf eine API, welche im Backend läuft, gesendet. Von dieser API aus, wird vom Frontend, sprich dieser Website, API requests an das
+                    Backend gemacht, wobei dann die letzten Wetterdaten angezeigt werden. <br><br> Durch diese drei Bestandteile sind alle Module, unabhängig
+                    von den anderen, beliebig erweiterbar. So kann zum Beispiel ein weiteres Arduino an einem anderen Standort platziert werden.
+                    <br><br> Das Projekt wurde von: 
+                    <br>Matthias Anliker <span class="text-xs">(Gehäusebau)</span>, 
+                    <br>Carolina Sousa <span class="text-xs">(Code Arduino)</span>,
+                    <br>Justin Winistöfer <span class="text-xs">(Code Front-, Backend & API)</span>
+                    <br>verwirklicht.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div><h3 class="text-sky-500 font-semibold text-xl mt-6">Bilder des Projektes</h3></div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bg-sky-500 mt-10 px-4 py-6 flex flex-col text-white">
+            <div class="text-2xl font-extrabold">Meteoino</div>
+            <ul class="font-bold mt-2">
+                <li><a href="#wetter">Wetter</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="mx-auto mt-4 text-xs"><p>&copy;2023 Justin Winistörfer</p></div>
+        </div>
+    </footer>
+    
+
+    <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
