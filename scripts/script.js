@@ -30,7 +30,7 @@ async function getWeatherData () {
         let updated = weatherData["updated"]
         tempHTML.innerHTML = `${temp} Grad`;
         humidityHTML.innerHTML = `${humidity}%`;
-        barHTML.innerHTML = `${bar} Pa`;
+        barHTML.innerHTML = `${bar} hPa`;
         gasHTML.innerHTML = `${gas}%`;
         lastUpdateHTML.innerHTML = `${updated}`;
       })
@@ -73,7 +73,7 @@ async function getWeatherData () {
         updated2 = "NULL"
         tempHTML2.innerHTML = `${temp2} Grad`;
         humidityHTML2.innerHTML = `${humidity2}%`;
-        barHTML2.innerHTML = `${bar2} Pa`;
+        barHTML2.innerHTML = `${bar2} hPa`;
         gasHTML2.innerHTML = `${gas2}%`;
         lastUpdateHTML2.innerHTML = `${updated2}`;
       })
